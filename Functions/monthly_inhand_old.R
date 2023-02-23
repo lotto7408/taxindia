@@ -8,7 +8,7 @@ monthly_inhand_old <- function(basic, base, hra, rent_yearly, NPS){
     prof_tax <- 2400
     std_deduction <- 50000
     
-    taxable_income_before_exemptions <- income_before_deduction - pf - std_deduction - prof_tax
+    taxable_income_before_exemptions <- income_before_deduction - std_deduction - prof_tax
     
     
     
@@ -35,7 +35,7 @@ monthly_inhand_old <- function(basic, base, hra, rent_yearly, NPS){
     
     tax_after_cess <- income_tax_before_cess * 1.04
     
-    pay_after_tax <- taxable_income_before_exemptions + std_deduction - tax_after_cess
+    pay_after_tax <- taxable_income_before_exemptions + std_deduction - tax_after_cess - pf
     pay_after_tax_monthly <- pay_after_tax / 12
     
     list(pay = pay_after_tax_monthly,

@@ -6,7 +6,7 @@ monthly_inhand_new_2020 <- function(basic, base){
     pf <- basic * 0.12
     prof_tax <- 2400
     
-    taxable_income_before_exemptions <- income_before_deduction - prof_tax
+    taxable_income_before_exemptions <- income_before_deduction 
     
     
     taxable_income <- taxable_income_before_exemptions - 0 # sadly no exepmtions
@@ -25,7 +25,7 @@ monthly_inhand_new_2020 <- function(basic, base){
     
     
     
-    pay_after_tax <- taxable_income_before_exemptions - tax_after_cess - pf
+    pay_after_tax <- taxable_income_before_exemptions - tax_after_cess - pf - prof_tax
     pay_after_tax_monthly <- pay_after_tax / 12
     
     
