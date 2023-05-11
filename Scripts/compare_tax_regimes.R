@@ -22,9 +22,9 @@ source("./Functions/monthly_inhand_old.R")
 
 
 # Assumptions:
-basic <- 18.57e5
-base <- 37.15e5
-hra <- 9.28e5
+basic <- 6.78e5
+base <- 17e5
+hra <- 2.71e5
 
 # basic <- 11.9e5
 # base <- 27.67e5
